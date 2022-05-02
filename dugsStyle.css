@@ -1,0 +1,97 @@
+:root {
+    --custom: ;
+}
+
+@media (max-width: 800px) {
+    main {
+        font-size: 14px;
+    }
+
+    .scoreboard {
+        height: 500px;
+        width: 100%;
+    }
+}
+
+body {
+    background: linear-gradient(180deg, rgba(58,6,98,1) 0%, rgba(2,0,36,1) 100%);
+    color: ghostwhite;
+}
+
+header {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 2rem;
+}
+
+footer .footRight {
+    position: relative;
+    right: 1;
+}
+
+*/
+
+.logo {
+    width: 200px;
+}
+
+.dugsWrapper {
+    margin: 0 50px 50px 50px;
+    padding: 0 15px 15px 15px;
+    border-radius: 15px;
+}
+
+.name, .tournamentNumb, .tournamentInfo {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rowTwo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.columnOne {
+    flex-direction: column;
+    width: 400px;
+}
+
+#dugsDrop, .dugsSelector {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 5px;
+    justify-content: center;
+}
+
+#dugsDrop {
+    border-radius: 15px;
+    padding: 5px;
+    width: 66%;
+    text-align: center;
+    background: rgb(217,193,228);
+    background: radial-gradient(circle, rgba(217,193,228,1) 10%, rgba(255,255,255,1) 100%);
+}
+
+.scoreboard {
+    height: 65vh;
+    width: 60vw;
+    z-index: 0;
+}
+
+.scoreboard:after {
+    content: "";
+    z-index: -1;
+}
+
